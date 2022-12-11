@@ -1,12 +1,3 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
 *,
 *::after,
 *::before {
@@ -33,8 +24,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      hsla(111, 55%, 64%, 0.801),
-      hsla(160, 64%, 43%, 0.801)
+      rgba(126, 213, 111, 0.801),
+      rgba(40, 180, 133, 0.801)
     ),
     url(../img/hero.jpg);
   background-size: cover;
@@ -58,16 +49,13 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   text-align: center;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-
   backface-visibility: hidden;
-
   margin-bottom: 6rem;
 }
 
@@ -76,7 +64,6 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -87,7 +74,6 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
-
   animation: moveInRight 1s ease-in;
 }
 
@@ -96,11 +82,9 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
-
   80% {
     transform: translateX(2rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
@@ -111,17 +95,14 @@ body {
     opacity: 0;
     transform: translateX(10rem);
   }
-
   80% {
     transform: translateX(-2rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -132,7 +113,6 @@ body {
     transform: translate(0);
   }
 }
-
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -141,7 +121,6 @@ body {
   display: inline-block; /* This way the box model works on the element as a normal block element, so border-box can be used  */
   border-radius: 10rem;
   transition: all 0.2s;
-
   position: relative;
 }
 
@@ -170,7 +149,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-
   transition: all 0.4s;
 }
 
@@ -187,3 +165,5 @@ body {
   animation: moveInBottom 0.5s ease-in 0.5s;
   animation-fill-mode: backwards; /* Automatically apply the styles of the 0% before the animation starts */
 }
+
+/*# sourceMappingURL=style.css.map */

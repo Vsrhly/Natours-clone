@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vsrhly/Natours-clone.git"
+  },
+  "author": "Roland Vásárhelyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vsrhly/Natours-clone/issues"
+  },
+  "homepage": "https://github.com/Vsrhly/Natours-clone#readme",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}
