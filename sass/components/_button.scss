@@ -1,0 +1,55 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block; /* This way the box model works on the element as a normal block element, so border-box can be used  */
+    border-radius: 10rem;
+    transition: all 0.2s;
+
+    position: relative;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #777;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transition: all 0.4s;
+  }
+
+  &--white::after {
+    background-color: #fff;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-in 0.5s;
+    animation-fill-mode: backwards; /* Automatically apply the styles of the 0% before the animation starts */
+  }
+}
