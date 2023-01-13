@@ -24,6 +24,10 @@
     background-color: #fff;
     color: #777;
   }
+  &--green {
+    background-color: $color-primary;
+    color: #fff;
+  }
 
   &::after {
     content: "";
